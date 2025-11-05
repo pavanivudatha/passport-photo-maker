@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 20px 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Custom File Upload Button */
+.custom-file-upload {
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* Cropping Area */
+.crop-section {
+    margin-top: 20px;
+}
+
+.image-container {
+    max-width: 100%;
+    height: 450px; /* Fixed height for consistency */
+    margin-bottom: 20px;
+}
+
+#imageToCrop {
+    display: block;
+    max-width: 100%;
+}
+
+.options-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.options-section h3 {
+    margin-top: 0;
+}
+
+.radio-group {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.radio-group label {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#cropBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#cropBtn:hover {
+    background-color: #218838;
+}
+
+/* Result Section */
+.result-section {
+    margin-top: 20px;
+}
+
+#resultCanvas {
+    border: 1px solid #ccc;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* NEW: Styles for action buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.download-btn, .print-btn {
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.download-btn {
+    background-color: #28a745; /* Green */
+}
+.download-btn:hover {
+    background-color: #218838;
+}
+
+.print-btn {
+    background-color: #007bff; /* Blue */
+}
+.print-btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Photo Maker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Passport Photo Maker</h1>
+        <p>Upload your photo, choose a layout, and we'll create a horizontal photo sheet for printing.</p>
+
+        <div class="upload-section">
+            <label for="imageUpload" class="custom-file-upload">
+                Choose Image
+            </label>
+            <input type="file" id="imageUpload" accept="image/*">
+        </div>
+
+        <div class="crop-section hidden">
+            <div class="image-container">
+                <img id="imageToCrop" src="">
+            </div>
+            
+            <div class="options-section">
+                <h3>Select Sheet Layout</h3>
+                <div class="radio-group">
+                    <input type="radio" id="layout4" name="sheetSize" value="4" checked>
+                    <label for="layout4">4 Photos (2x2)</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="layout8" name="sheetSize" value="8">
+                    <label for="layout8">8 Photos (4x2)</label>
+                </div>
+            </div>
+
+            <button id="cropBtn">Generate Passport Photos</button>
+        </div>
+
+        <div class="result-section hidden">
+            <h2>Your Photos are Ready!</h2>
+            <p>Print the sheet directly or save the image to your device.</p>
+            <canvas id="resultCanvas"></canvas>
+            <div class="action-buttons">
+                <a id="downloadLink" class="download-btn">Download Sheet</a>
+                <button id="printBtn" class="print-btn">Print Sheet 🖨️</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
