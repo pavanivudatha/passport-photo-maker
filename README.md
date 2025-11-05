@@ -4,17 +4,8 @@ A simple, client-side web application to generate printable passport-sized photo
 
 ## 🚀 Live Demo
 
-**[Try the live version deployed on Vercel!](httpsIA://YOUR_VERCEL_LINK_HERE)**
+**[Try the live version deployed on Vercel!]([httpsIA://YOUR_VERCEL_LINK_HERE](https://passport-photo-maker-seven.vercel.app/))**
 
-> **Note:** Don't forget to replace `YOUR_VERCEL_LINK_HERE` with your actual Vercel deployment URL.
-
-## 🖼️ Screenshot
-
-![Screenshot of the Passport Photo Maker app](screenshot.png)
-
-> **Note:** To add this screenshot, take a picture of your running app, name the file `screenshot.png`, and upload it to your GitHub repository alongside the `index.html` file.
-
----
 
 ## ✨ Features
 
@@ -58,7 +49,7 @@ Since this is a static site, you don't need any complex setup.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+    git clone ([https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/pavanivudatha/passport-photo-maker.git))
     ```
 2.  **Navigate to the folder:**
     ```bash
