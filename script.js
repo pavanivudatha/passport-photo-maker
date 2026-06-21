@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const flippedCtx = flippedCanvas.getContext('2d');
         flippedCanvas.width = CROP_WIDTH;
         flippedCanvas.height = CROP_HEIGHT;
-        flippedCtx.scale(-1, 1);
-        flippedCtx.translate(-CROP_WIDTH, 0);
+       // flippedCtx.scale(-1, 1);
+       // flippedCtx.translate(-CROP_WIDTH, 0);
         flippedCtx.drawImage(singlePhotoCanvas, 0, 0);
 
         // 2. Rotate the flipped image 90 degrees left
